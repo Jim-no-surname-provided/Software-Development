@@ -1,0 +1,145 @@
+--------------------------------------------------------------------------------------------------
+Aufgabe 1 (CylindricForms):
+--------------------------------------------------------------------------------------------------
+What do you want to calculate?
+Choose:
+[0] for the area of a circle
+[1] for the volume of a cylinder
+[2] for the volume of a cylindric Pyramid
+0
+Please enter the radius of your circle.
+Radius = -1
+The area is 0.0
+----------------------------------------------
+What do you want to calculate?
+Choose:
+[0] for the area of a circle
+[1] for the volume of a cylinder
+[2] for the volume of a cylindric Pyramid
+-1
+Sorry, invalid choice.
+---------------------------------------------
+What do you want to calculate?
+Choose:
+[0] for the area of a circle
+[1] for the volume of a cylinder
+[2] for the volume of a cylindric Pyramid
+0
+Please enter the radius of your circle.
+Radius = 1
+The area is 3.141592653589793
+----------------------------------------------
+What do you want to calculate?
+Choose:
+[0] for the area of a circle
+[1] for the volume of a cylinder
+[2] for the volume of a cylindric Pyramid
+1
+Please enter the radius and height of your cylinder.
+Radius = 5
+Height = -1
+The volume is 0.0
+----------------------------------------------
+What do you want to calculate?
+Choose:
+[0] for the area of a circle
+[1] for the volume of a cylinder
+[2] for the volume of a cylindric Pyramid
+2
+Please enter the radius and height of your cylindric pyramid.
+Radius = 1
+Height = 1
+The volume is 1.0471975511965976
+----------------------------------------------
+What do you want to calculate?
+Choose:
+[0] for the area of a circle
+[1] for the volume of a cylinder
+[2] for the volume of a cylindric Pyramid
+2
+Please enter the radius and height of your cylindric pyramid.
+Radius = 1
+Height = -1
+The volume is 0.0
+----------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------------
+Aufgabe 2 (arrayManipulation):
+--------------------------------------------------------------------------------------------------
+Test 1:
+Before add:
+a = [0, 0, 1]
+b = [5, 5, 5]
+After add:
+b = [5, 5, 6]
+-----------
+Test 2:
+Before add:
+a = [10, 5, -1, 15]
+b = [6, 0, 1, 10, 15, 27, 13]
+After add:
+b = [16, 5, 0, 25, 15, 27, 13]
+-----------
+Test 3:
+Before add:
+a = null
+b = [5, 5, 5]
+After add:
+b = [5, 5, 5]
+-----------
+Test 4:
+Before add:
+a = [2147483647, 10, 50]
+b = [5, 5, 5]
+After add:
+b = [-2147483644, 15, 55]
+-----------
+
+
+
+--------------------------------------------------------------------------------------------------
+Aufgabe 3 (Processes):
+--------------------------------------------------------------------------------------------------
+Total: 0
+Error: No mean availabe since no number has been processed yet
+Mean: 0.0
+Error: No minimum availabe since no number has been processed yet
+Minimum: 0
+Total: 8
+Mean: 1.0
+Minimum: -20
+Total: 70
+Mean: 7.0
+Minimum: -20
+Total: -54473
+Mean: -3890.0
+Minimum: -101010
+
+
+
+--------------------------------------------------------------------------------------------------
+Aufgabe 4 (NormalizedFunctions):
+--------------------------------------------------------------------------------------------------
+Test 1:
+min = 0.0, max = 10.0
+Value = 5.0
+Result = 0.5
+--------------
+Test 2:
+min = 0.0, max = 10.0
+Values = [0.0, 5.0, 10.0]
+Result = [0.0, 0.5, 1.0]
+--------------
+Test 3:
+min = -45.7, max = 75.0
+Values = [1005.0, 17.0, 12654.0, 0.0, 0.2555]
+Result = [1.0, 0.5194697597348799, 1.0, 0.37862468931234466, 0.38074150787075395]
+--------------
+Test 4:
+min = -45.88, max = 75.3
+Values = [14.01, 17.0, -12.2, -0.2555]
+Result = [0.4942234692193431, 0.5188975078395774, 0.2779336524178908, 0.3765018980029708]
+--------------
+

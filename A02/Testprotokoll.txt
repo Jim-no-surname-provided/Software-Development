@@ -1,0 +1,49 @@
+Aufgabe01 - MyFirstProgram:
+Test1:
+	20
+Test2:
+	-20
+Test3:
+	0
+Test4:
+	1.5
+
+Aufgabe02 - Calculations:
+Test1:
+	2
+	3
+	4
+	5
+Test2:
+	1
+	1
+	1
+	1
+Test3:
+	-1
+	5
+	0 - Fehler (/ by zero)
+	8555
+
+Aufgabe03 - Area:
+Test1:
+	15.5
+	20.5
+Test2:
+	3
+	4
+Test3:
+	0	
+	0
+Test4:
+	-1
+	-1
+
+Aufgabe04 - Aquastore:
+Test1:
+	620
+Test2:
+	0
+Test3:
+	-1
+

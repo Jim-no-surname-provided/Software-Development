@@ -1,0 +1,102 @@
+--------------------------------------------------------------------------------------------------
+Aufgabe 1 (OneDimensionalArray):
+--------------------------------------------------------------------------------------------------
+Please enter a list of integer numbers, followed by an 'x':
+0 1 2 1 4 1 x
+Last read entry is one: true
+All entries at even indices are even: true
+Number of increasing neighbors: 3
+------------
+Please enter a list of integer numbers, followed by an 'x':
+4 3 2 1 3 x
+Last read entry is one: false
+All entries at even indices are even: false
+Number of increasing neighbors: 1
+------------
+Please enter a list of integer numbers, followed by an 'x':
+5 13 5465 89 89 . 1 x
+Last read entry is one: false
+All entries at even indices are even: false
+Number of increasing neighbors: 2
+------------
+Please enter a list of integer numbers, followed by an 'x':
+0 1 0 1 0 1 0 1 x
+Last read entry is one: true
+All entries at even indices are even: true
+Number of increasing neighbors: 4
+------------
+Please enter a list of integer numbers, followed by an 'x':
+x
+
+
+--------------------------------------------------------------------------------------------------
+Aufgabe 2 (TwoDimensionalArray):
+--------------------------------------------------------------------------------------------------
+Max found at [1, 3]: 31 // With the original list
+------------
+Max found at [5, 2]: 33 // With the example
+------------
+
+
+--------------------------------------------------------------------------------------------------
+Aufgabe 3 (ConvertingText):
+--------------------------------------------------------------------------------------------------
+Please enter a sentence:
+i got 99 problems, but Java ain’t one.
+I   Got   xxxxxxxxxxxxxxxxxx   Problems   But   Java   Aint   One
+------------
+Please enter a sentence:
+1 2 3! A b C! Crazy Words is what I see.
+x   xx   xxx   A   B   C   Crazy   Words   Is   What   I   See
+------------
+Please enter a sentence:
+Ok, but here must be an error: 5 o)H+} _,m¥a"Y»b$E/( ¼-,-t[h^#e*_r|-E.= i(¼s$[-"# @n]@o#¼T
+Ok   But   Here   Must   Be   An   Error   xxxxx   Oh   Maybe   There   Is   Not
+------------
+Please enter a sentence:
+-------hell000000o ----w000000000orl||||||d-------
+Hello   World
+------------
+
+--------------------------------------------------------------------------------------------------
+Aufgabe 4 (StoryGenerator):
+--------------------------------------------------------------------------------------------------
+
+Ask a question:
+Hello!
+It is not a question
+
+Well, it depends on your definition of question, isn't it so?
+Yes
+
+Yes it depends or yes it isn't?
+Yes
+
+Oh
+It is not a question
+
+Do you want to make a story?
+Yes
+
+What kind, a fantasy one?
+No
+
+Maybe about cats?
+No
+
+What about dogs that are astronauts?
+Yes
+
+What are they wearing, a suit?
+No
+
+How are they going to breath then, with magic?
+Yes
+
+Oh, so they are magic, cool.
+It is not a question
+
+Do you like magic?
+Yes
+
+x

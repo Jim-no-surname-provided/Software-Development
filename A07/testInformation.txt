@@ -1,0 +1,37 @@
+s
+e
+0
+c
+1
+Wash the dishes
+Hubert
+c
+1
+Clean the living room
+Gerald
+c
+2
+Do homework
+Simone
+3
+Work on assignment 1
+Work on assignment 2
+Test implementations
+c
+3
+Prepare for SW1 exam
+Simone
+4
+Study slides
+Study assignments
+Study self-assessments
+Study last year's exams
+3
+s
+e
+0
+e
+2
+e
+3
+q

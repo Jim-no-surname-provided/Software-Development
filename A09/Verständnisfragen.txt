@@ -1,0 +1,48 @@
+- 4.1 (kompiliert der Code?)
+
+Ja, weil eine Illegal Argument Exception ist eine Runtime Exception, und diese müssen nicht gefangen werden.
+
+- 4.2 (kompiliert der Code?)
+
+Nein, weil eine Farm Exception ist keine Runtime Exception und muss gefangen werden (oder weiter gegeben, was func() nicht macht).
+
+- 4.3 (kompiliert der Code?)
+
+Nein. Obwohl die Funktion in einem try-catch ist, werden nur Stable Exceptions gefangen, und Farm Exception ist kein Kind davon. Also Farm Exceptions mussen noch gefangen werden.
+
+- 4.4 (kompiliert der Code)
+
+Ja. Eine Stable Full Exception ist eine Stable Exception, weil sie davon erbt, und alle Stable Exceptions werden gefangen.
+
+- 4.5 (Ergebnis vorauszusagen)
+
+*fun1(1):
+
+Methodenreihenfolge:
+fun1(1) -> fun2(1) -> fun3(1) -> print("a3") -> print("a2") -> print("d2") -> print("e2") -> print("a1") -> print("d1")
+ 
+Ausgabe: a3a2d2e2a1d1
+
+
+*fun1(-1):
+
+Methodenreihenfolge:
+fun1(-1) -> fun2(-1) -> fun3(-1) -> IllegalArgumentException -> print("b2") -> print("c2") -> print("d2") -> print("e2") -> print("a1") -> print("d1")
+
+Ausgabe: b2c2d2e2a1d1
+
+
+*fun1(-15)
+
+Methodenreihenfolge:
+fun1(-15) -> fun2(-15) -> fun3(-15) -> IllegalArgumentException -> print("b2") -> AnimalException-> print("d2")
+
+Ausgabe: b2d2 mit anschließender AnimalException
+
+
+*fun1(15)
+
+Methodenreihenfolge:
+fun1(15) -> fun2(15) -> fun3(15) -> StableFullException -> print("d2") ->  print("b1") -> FarmException
+
+Ausgabe: d2b1

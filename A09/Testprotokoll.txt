@@ -1,0 +1,264 @@
+Starting test application with example farm
+
+Test farm created:
+Stables:
+[0] Stable #1 (capacity 2/2)
+        - Animal Blinky (Food per day: 1.00)
+        - Animal Susi (Food per day: 50.00)
+[1] Stable #2 (capacity 1/5)
+        - Animal Berta (Food per day: 52.50)
+Animals:
+[0] Animal Blinky (Food per day: 1.00)
+[1] Animal Susi (Food per day: 50.00)
+[2] Animal Berta (Food per day: 52.50)
+[3] Animal Ducky (Food per day: 2.50)
+
+=============== Menu ===============
+Print farm ................... p
+Add new animal to farm ....... a
+Add new stable to farm ....... s
+Assign animal to stable ...... +
+Remove animal from stable .... -
+Switch animal's stable........ c
+Change animal's daily food ... f
+Exit application ............. x
+Select operation: a
+Enter animal name: Fred
+Enter daily food: -3
+Some argument was wrong.
+The food per day must be greater than 0.
+
+=============== Menu ===============
+Print farm ................... p
+Add new animal to farm ....... a
+Add new stable to farm ....... s
+Assign animal to stable ...... +
+Remove animal from stable .... -
+Switch animal's stable........ c
+Change animal's daily food ... f
+Exit application ............. x
+Select operation: s
+Enter stable number: 3
+Enter stable capacity: 0
+Some argument was wrong.
+The capacity must be greater than 0.
+
+=============== Menu ===============
+Print farm ................... p
+Add new animal to farm ....... a
+Add new stable to farm ....... s
+Assign animal to stable ...... +
+Remove animal from stable .... -
+Switch animal's stable........ c
+Change animal's daily food ... f
+Exit application ............. x
+Select operation: p
+Stables:
+[0] Stable #1 (capacity 2/2)
+        - Animal Blinky (Food per day: 1.00)
+        - Animal Susi (Food per day: 50.00)
+[1] Stable #2 (capacity 1/5)
+        - Animal Berta (Food per day: 52.50)
+Animals:
+[0] Animal Blinky (Food per day: 1.00)
+[1] Animal Susi (Food per day: 50.00)
+[2] Animal Berta (Food per day: 52.50)
+[3] Animal Ducky (Food per day: 2.50)
+
+=============== Menu ===============
+Print farm ................... p
+Add new animal to farm ....... a
+Add new stable to farm ....... s
+Assign animal to stable ...... +
+Remove animal from stable .... -
+Switch animal's stable........ c
+Change animal's daily food ... f
+Exit application ............. x
+Select operation: +
+Animals:
+[0] Animal Blinky (Food per day: 1.00)
+[1] Animal Susi (Food per day: 50.00)
+[2] Animal Berta (Food per day: 52.50)
+[3] Animal Ducky (Food per day: 2.50)
+Select animal (index): 2
+Stables:
+[0] Stable #1 (capacity 2/2)
+        - Animal Blinky (Food per day: 1.00)
+        - Animal Susi (Food per day: 50.00)
+[1] Stable #2 (capacity 1/5)
+        - Animal Berta (Food per day: 52.50)
+Select stable (index): 1
+Something went wrong with the stable:
+The animal is already in the Stable
+Stable:
+Stable #2 (capacity 1/5)
+        - Animal Berta (Food per day: 52.50)
+
+=============== Menu ===============
+Print farm ................... p
+Add new animal to farm ....... a
+Add new stable to farm ....... s
+Assign animal to stable ...... +
+Remove animal from stable .... -
+Switch animal's stable........ c
+Change animal's daily food ... f
+Exit application ............. x
+Select operation: +
+Animals:
+[0] Animal Blinky (Food per day: 1.00)
+[1] Animal Susi (Food per day: 50.00)
+[2] Animal Berta (Food per day: 52.50)
+[3] Animal Ducky (Food per day: 2.50)
+Select animal (index): 3
+Stables:
+[0] Stable #1 (capacity 2/2)
+        - Animal Blinky (Food per day: 1.00)
+        - Animal Susi (Food per day: 50.00)
+[1] Stable #2 (capacity 1/5)
+        - Animal Berta (Food per day: 52.50)
+Select stable (index): 0
+Something went wrong with the stable:
+The stable is already full
+Stable:
+Stable #1 (capacity 2/2)
+        - Animal Blinky (Food per day: 1.00)
+        - Animal Susi (Food per day: 50.00)
+
+=============== Menu ===============
+Print farm ................... p
+Add new animal to farm ....... a
+Add new stable to farm ....... s
+Assign animal to stable ...... +
+Remove animal from stable .... -
+Switch animal's stable........ c
+Change animal's daily food ... f
+Exit application ............. x
+Select operation: 0
+
+=============== Menu ===============
+Print farm ................... p
+Add new animal to farm ....... a
+Add new stable to farm ....... s
+Assign animal to stable ...... +
+Remove animal from stable .... -
+Switch animal's stable........ c
+Change animal's daily food ... f
+Exit application ............. x
+Select operation: 1
+
+=============== Menu ===============
+Print farm ................... p
+Add new animal to farm ....... a
+Add new stable to farm ....... s
+Assign animal to stable ...... +
+Remove animal from stable .... -
+Switch animal's stable........ c
+Change animal's daily food ... f
+Exit application ............. x
+Select operation: c
+Animals:
+[0] Animal Blinky (Food per day: 1.00)
+[1] Animal Susi (Food per day: 50.00)
+[2] Animal Berta (Food per day: 52.50)
+[3] Animal Ducky (Food per day: 2.50)
+Select animal (index): 0
+Stables:
+[0] Stable #1 (capacity 2/2)
+        - Animal Blinky (Food per day: 1.00)
+        - Animal Susi (Food per day: 50.00)
+[1] Stable #2 (capacity 1/5)
+        - Animal Berta (Food per day: 52.50)
+Select from stable (index): 1
+Select to stable (index): 0
+Something went wrong with the stable:
+404. Animal not found.
+Stable:
+Stable #2 (capacity 1/5)
+        - Animal Berta (Food per day: 52.50)
+
+=============== Menu ===============
+Print farm ................... p
+Add new animal to farm ....... a
+Add new stable to farm ....... s
+Assign animal to stable ...... +
+Remove animal from stable .... -
+Switch animal's stable........ c
+Change animal's daily food ... f
+Exit application ............. x
+Select operation: c
+Animals:
+[0] Animal Blinky (Food per day: 1.00)
+[1] Animal Susi (Food per day: 50.00)
+[2] Animal Berta (Food per day: 52.50)
+[3] Animal Ducky (Food per day: 2.50)
+Select animal (index): 2
+Stables:
+[0] Stable #1 (capacity 2/2)
+        - Animal Blinky (Food per day: 1.00)
+        - Animal Susi (Food per day: 50.00)
+[1] Stable #2 (capacity 1/5)
+        - Animal Berta (Food per day: 52.50)
+Select from stable (index): 1
+Select to stable (index): 0
+Something went wrong with the stable:
+The stable is already full
+Stable:
+Stable #1 (capacity 2/2)
+        - Animal Blinky (Food per day: 1.00)
+        - Animal Susi (Food per day: 50.00)
+
+=============== Menu ===============
+Print farm ................... p
+Add new animal to farm ....... a
+Add new stable to farm ....... s
+Assign animal to stable ...... +
+Remove animal from stable .... -
+Switch animal's stable........ c
+Change animal's daily food ... f
+Exit application ............. x
+Select operation: c
+Animals:
+[0] Animal Blinky (Food per day: 1.00)
+[1] Animal Susi (Food per day: 50.00)
+[2] Animal Berta (Food per day: 52.50)
+[3] Animal Ducky (Food per day: 2.50)
+Select animal (index): 0
+Stables:
+[0] Stable #1 (capacity 2/2)
+        - Animal Blinky (Food per day: 1.00)
+        - Animal Susi (Food per day: 50.00)
+[1] Stable #2 (capacity 0/5)
+Select from stable (index): 0
+Select to stable (index): 0
+Exception: The new stable and the old one are the same stable
+
+=============== Menu ===============
+Print farm ................... p
+Add new animal to farm ....... a
+Add new stable to farm ....... s
+Assign animal to stable ...... +
+Remove animal from stable .... -
+Switch animal's stable........ c
+Change animal's daily food ... f
+Exit application ............. x
+Select operation: f
+Animals:
+[0] Animal Blinky (Food per day: 1.00)
+[1] Animal Susi (Food per day: 50.00)
+[2] Animal Berta (Food per day: 52.50)
+[3] Animal Ducky (Food per day: 2.50)
+Select animal (index): 0
+Change daily food by: -1.5
+Exception: The new food per day would be less than zero, and that's not possible.
+Animal: Animal Blinky (Food per day: 1.00)
+
+=============== Menu ===============
+Print farm ................... p
+Add new animal to farm ....... a
+Add new stable to farm ....... s
+Assign animal to stable ...... +
+Remove animal from stable .... -
+Switch animal's stable........ c
+Change animal's daily food ... f
+Exit application ............. x
+Select operation: x  

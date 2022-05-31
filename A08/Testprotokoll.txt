@@ -1,0 +1,33 @@
+List size: 7
+List content: 
+[Student{Helmut c:: 15000}, Student{Gabe: 180}, Student{Susi: 144}, Student{Lilly: 144}, Student{Maxine: 72}, Student{Harold: 42}, Student{Bob: 3}]
+Most ECTS: Student{Helmut c:: 15000}
+Fewest ECTS: Student{Bob: 3}
+Student at index 2: Student{Susi: 144}
+Student at index 5: Student{Harold: 42}
+Student at index 1337: null
+Filter ECTS >= 50 (new list):
+Filtered list - Size: 5
+Filtered list - Content: [Student{Helmut c:: 15000}, Student{Gabe: 180}, Student{Lilly: 144}, Student{Susi: 144}, Student{Maxine: 72}]
+Filtered list - Most ECTS: Student{Helmut c:: 15000}
+Filtered list - Fewest ECTS: Student{Maxine: 72}
+Filtered list - Student at index 2: Student{Lilly: 144}
+Filtered list - Student at index 5: null
+Filtered list - Student at index 1337: null
+Size and content after clearing filtered list: 0, []
+Remove ECTS > 100 (modify list)
+List size: 3
+List content: [Student{Maxine: 72}, Student{Harold: 42}, Student{Bob: 3}]
+Most ECTS: Student{Maxine: 72}
+Fewest ECTS: Student{Bob: 3}
+Student at index 2: Student{Bob: 3}
+Student at index 5: null
+Student at index 1337: null
+Remove ECTS > 0 (modify list)
+List size: 0
+List content: []
+Most ECTS: null
+Fewest ECTS: null
+Student at index 2: null
+Student at index 5: null
+Student at index 1337: null

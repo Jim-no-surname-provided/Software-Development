@@ -1,0 +1,5 @@
+D = Digit.
+Zeitstempel = Tag [ "T" Uhrzeit [ Zeitzone ] ].
+Tag = DDDD "-" DD "-" DD.
+Uhrzeit = DD ":" DD ":" DD.
+Zeitzone = "Z" | ("+" | "-") DD ":" DD.

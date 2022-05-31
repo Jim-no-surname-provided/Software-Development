@@ -1,0 +1,60 @@
+--------------------------------------------------------------------------------------------------
+Aufgabe 1 (Power):
+--------------------------------------------------------------------------------------------------
+pow:
+a = 2, b = 6
+Result: 64
+pow:
+a = 3, b = 3
+Result: 27
+pow:
+a = 5, b = 3
+Result: 125
+pow:
+a = 10, b = 5
+Result: 100000
+
+
+
+--------------------------------------------------------------------------------------------------
+Aufgabe 2 & 3 (CarApplication):
+--------------------------------------------------------------------------------------------------
+No car to print
+"Frodo" is currently going 70.0 km/h and has yet travelled 1.807862E7 km
+"Renault R5" is currently going 130.0 km/h and has yet travelled 120000.0 km
+"Speedy Gonzáles" is currently going 40.0 km/h and has yet travelled 7.4952563E7 km
+"Pi" is currently going 314.0 km/h and has yet travelled 1.59265358979E11 km
+"Lightning McQueen" is currently going 780.0 km/h and has yet travelled 5.52E11 km
+"Batmobil" is currently going 180.0 km/h and has yet travelled 148753.0 km
+Batmobil changed its speed to 230.0 km/h
+Batmobil drove 115.0 km
+Frodo drove 17.5 km
+Speedy Gonzáles changed its speed to 110.0 km/h
+Speedy Gonzáles drove 330.0 km
+Renault R5 changed its speed to 217.5 km/h
+drive: no car specified
+changeSpeed: no car specified
+
+--------------------------------------------------------------------------------------------------
+Aufgabe 4 (StatisticsApplication):
+--------------------------------------------------------------------------------------------------
+
+Hay
+----------
+null
+0
+0.0
+null
+----------
+And
+6
+7.5
+TAtaso
+----------
+Na
+7
+2.5714285714285716
+Nnnnnnb
+
+
+
