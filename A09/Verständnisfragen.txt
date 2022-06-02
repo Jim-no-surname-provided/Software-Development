@@ -45,4 +45,4 @@ Ausgabe: b2d2 mit anschließender AnimalException
 Methodenreihenfolge:
 fun1(15) -> fun2(15) -> fun3(15) -> StableFullException -> print("d2") ->  print("b1") -> FarmException
 
-Ausgabe: d2b1
+Ausgabe: d2b1 mit anschließender FarmException
