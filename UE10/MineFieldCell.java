@@ -32,6 +32,6 @@ public class MineFieldCell {
         if (isMine)
             return "X";
 
-        return nNeighbors + "                                                                                                                                                                                                                                                                                                       ";
+        return nNeighbors + "";
     }
 }
