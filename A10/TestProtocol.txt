@@ -1,0 +1,130 @@
+How many ships are they going to be?
+2
+  0123
+0|****|0
+1|****|1
+2|****|2
+3|****|3
+  0123
+Row: 0
+Col: 0
+  0123
+0|o***|0
+1|****|1
+2|****|2
+3|****|3
+  0123
+There are still 4 cells with a ship
+Row: 0
+Col: 0
+This cell is already uncovered, pick another!
+Row: 0
+Col: 5
+It must be between 0 and 3!
+5
+It must be between 0 and 3!
+0
+This cell is already uncovered, pick another!
+Row: 0
+Col: 4
+It must be between 0 and 3!
+3
+  0123
+0|o**o|0
+1|****|1
+2|****|2
+3|****|3
+  0123
+There are still 4 cells with a ship
+Row: 5
+It must be between 0 and 3!
+3
+Col: 3
+  0123
+0|o**o|0
+1|****|1
+2|****|2
+3|***o|3
+  0123
+There are still 4 cells with a ship
+Row: 4
+It must be between 0 and 3!
+4
+It must be between 0 and 3!
+2
+Col: 2
+  0123
+0|o**o|0
+1|****|1
+2|**o*|2
+3|***o|3
+  0123
+There are still 4 cells with a ship
+Row: 1
+Col: 1
+  0123
+0|o**o|0
+1|*o**|1
+2|**o*|2
+3|***o|3
+  0123
+There are still 4 cells with a ship
+Row: 2
+Col: 1
+  0123
+0|o**o|0
+1|*o**|1
+2|*oo*|2
+3|***o|3
+  0123
+There are still 4 cells with a ship
+Row: 1
+Col: 2
+You hit something!
+  0123
+0|o**o|0
+1|*ox*|1
+2|*oo*|2
+3|***o|3
+  0123
+There are still 3 cells with a ship
+Row: 1
+Col: 3
+You hit something!
+  0123
+0|o**o|0
+1|*oxx|1
+2|*oo*|2
+3|***o|3
+  0123
+There are still 2 cells with a ship
+Row: 3
+Col: 1
+  0123
+0|o**o|0
+1|*oxx|1
+2|*oo*|2
+3|*o*o|3
+  0123
+There are still 2 cells with a ship
+Row: 0
+Col: 1
+You hit something!
+  0123
+0|ox*o|0
+1|*oxx|1
+2|*oo*|2
+3|*o*o|3
+  0123
+There are still 1 cells with a ship
+Row: 0
+Col: 2
+You hit something!
+  0123
+0|oxxo|0
+1|*oxx|1
+2|*oo*|2
+3|*o*o|3
+  0123
+There are still 0 cells with a ship
+Nice! You won!

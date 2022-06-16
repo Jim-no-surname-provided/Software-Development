@@ -3,45 +3,59 @@ import java.util.LinkedList;
 
 /**
  * Simple input from the keyboard or from a file.
- * <p>Copyright (c) 2005 Hanspeter Moessenboeck, University of Linz</p>
+ * <p>
+ * Copyright (c) 2005 Hanspeter Moessenboeck, University of Linz
+ * </p>
  *
- * <p>This class is free software; you can redistribute it and/or modify it
+ * <p>
+ * This class is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
  * Free Software Foundation; either version 2, or (at your option) any
- * later version.</p>
+ * later version.
+ * </p>
  *
- * <p>This class is distributed in the hope that it will be useful, but
+ * <p>
+ * This class is distributed in the hope that it will be useful, but
  * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
- * or FITNESS FOR A PARTICULAR PURPOSE.  See the <a href="http://www.gnu.org/copyleft/gpl.html">
- * GNU General Public License</a> for more details.</p>
+ * or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * <a href="http://www.gnu.org/copyleft/gpl.html">
+ * GNU General Public License</a> for more details.
+ * </p>
  * <hr>
  *
- * <p>This class allows reading formatted data either from the keyboard
+ * <p>
+ * This class allows reading formatted data either from the keyboard
  * or from a file. It is intended to be used in an introductory
  * programming course when classes, packages and exceptions are unknown
  * at the beginning. To use it, simply copy In.class into the
- * source file directory. </p>
+ * source file directory.
+ * </p>
  *
- * <p>All input comes from the current input file, which is initially
+ * <p>
+ * All input comes from the current input file, which is initially
  * the keyboard. Opening a file with open() makes it the new current
  * input file. Closing a file with close() switches back to the previous
- * input file.</p>
+ * input file.
+ * </p>
  *
- * <p>When reading from the keyboard, reading blocks until the user has entered
+ * <p>
+ * When reading from the keyboard, reading blocks until the user has entered
  * a sequence of characters terminated by the return key. All methods read
  * from this input buffer (including the terminating '\r' and '\n') until the
  * buffer is fully consumed. When a method tries to read beyond the end
- * of the buffer, it blocks again waiting for the next buffer.</p>
+ * of the buffer, it blocks again waiting for the next buffer.
+ * </p>
  *
- * <p>End of file detection: When reading from the keyboard, eof can be
+ * <p>
+ * End of file detection: When reading from the keyboard, eof can be
  * signaled as ctrl-Z at the beginning of a new line. When reading from a file,
  * eof occurs when an attempt is made to read beyond the end of the file.
  * In either case In.done() returns false if the requested data could not
- * be read because of eof. </p>
+ * be read because of eof.
+ * </p>
  */
 @SuppressWarnings("unused")
 public class In {
-
   /**
    * End of file indicator returned by read() or peek() when no more
    * characters can be read.
@@ -50,18 +64,20 @@ public class In {
 
   private static final int empty = '\ufffe';
 
-  private static final char                    eofChar = '\u0005';  // ctrl E
+  private static final char eofChar = '\u0005'; // ctrl E
   private static final LinkedList<InputStream> inputStack;
-  private static final LinkedList<Character>   bufferStack;
-  private static final char                    ls = '\n';    // line separator (eol)
+  private static final LinkedList<Character> bufferStack;
+  private static final char ls = '\n'; // line separator (eol)
 
   private static InputStream in;
-  private static boolean     done; // true if recent operation was successful
-  private static char        buf; // last read character
+  private static boolean done; // true if recent operation was successful
+  private static char buf; // last read character
 
   private static char charAfterWhiteSpace() {
     char c;
-    do c = read(); while (done && c <= ' ');
+    do
+      c = read();
+    while (done && c <= ' ');
     return c;
   }
 
@@ -115,7 +131,6 @@ public class In {
     return b.toString();
   }
 
-
   /**
    * Read a raw character (byte).
    * If an attempt is made to read beyond the end of the file,
@@ -126,7 +141,8 @@ public class In {
     char c;
     if (buf != empty) {
       c = buf;
-      if (buf != eof) buf = empty;
+      if (buf != eof)
+        buf = empty;
     } else {
       try {
         c = (char) in.read();
@@ -176,7 +192,8 @@ public class In {
   /**
    * Read a boolean value.
    * This method skips white space and tries to read an identifier. If its value
-   * is "true" the method returns true otherwise false. If the identifier is neither
+   * is "true" the method returns true otherwise false. If the identifier is
+   * neither
    * "true" nor "false" done() yields false.
    */
   public static boolean readBoolean() {

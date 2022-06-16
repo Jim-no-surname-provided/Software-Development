@@ -1,66 +1,60 @@
 
 public class BattleshipGame {
 
-  GameField field;
+    private Field field;
 
-  public BattleshipGame(int height, int width, int nShips) {
-    field = new GameField(height, width, nShips);
-  }
+    public BattleshipGame(int nShips) {
+        field = new Field(nShips);
 
-  public void run() {
-
-    while (!field.isGameOver()) {
-      field.print();
-
-      Point target = getTarget();
-
-      field.unCover(target.row, target.col);
+        putShips(nShips);
     }
-    field.print();
 
-    printEndText();
-  }
+    private void putShips(int nShips) {
+        for (int i = 0; i < nShips; i++) {
+            int row;
+            int col;
 
-  private void printEndText() {
-    Out.println("Congratulations! You won.");
-  }
+            do {
+                row = (int) (Math.random() * 4);
+                col = (int) (Math.random() * 3);
+            } while (field.isShip(row, col) || field.isShip(row, col + 1));
 
-  private Point getTarget() {
-
-    int row = readNumber("Row: ", 0, field.height - 1);
-    int col = readNumber("Column: ", 0, field.width - 1);
-
-    while (!field.isCovered(row, col)) {
-      Out.println("That cell was already uncovered! Take another one.");
-      row = readNumber("Row: ", 0, field.height - 1);
-      col = readNumber("Column: ", 0, field.width - 1);
+            field.putShip(row, col);
+            field.putShip(row, col + 1);
+        }
     }
-    return new Point(row, col);
-  }
 
-  private static int readNumber(String prompt, int lowerBound, int upperBound) {
-    int number;
-    boolean isValidNumber = false;
+    public void run() {
 
-    do {
-      // prompt the user to enter something
-      Out.print(prompt);
+        field.print();
 
-      // read a number from the console+
-      number = In.readInt();
+        while (!field.isGameOver()) {
+            
+            Target target = getTarget();
+            while (!field.isCovered(target.row, target.col)) {
+                Out.println("This cell is already uncovered, pick another!");
+                target = getTarget();
+            }
 
-      // handle invalid input
-      if (!In.done()) {
-        Out.println("Invalid input!");
-        In.readLine(); // consume newline char
-      } else if (number < lowerBound || number > upperBound) {
-        Out.print(String.format("Number must be in [%d, %d]%n", lowerBound, upperBound));
-      } else {
-        isValidNumber = true;
-      }
-    } while (!isValidNumber);
+            if (field.hit(target.row, target.col)) {
+                Out.println("You hit something!");
+            }
 
-    return number;
-  }
+            field.print();
+            Out.println(String.format("There are still %d cells with a ship", field.getCoveredShips()));
+        }
 
+        Out.println("Nice! You won!");
+    }
+
+    private Target getTarget() {
+
+        Out.print("Row: ");
+        int row = Main.receiveInt(0, 3);
+        
+        Out.print("Col: ");
+        int col = Main.receiveInt(0, 3);
+
+        return new Target(row, col);
+    }
 }
