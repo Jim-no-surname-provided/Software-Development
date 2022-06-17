@@ -1,10 +1,26 @@
 public class Field {
 
-	private int coveredShips;
-	private Cell[][] cells = new Cell[4][4];
+	private int height;
+	private int width;
 
-	public Field(int nShips) {
+	public int getHeight() {
+		return height;
+	}
+
+	public int getWidth() {
+		return width;
+	}
+
+	private int coveredShips;
+	private Cell[][] cells;
+
+	public Field(int height, int width, int nShips) {
+
+		this.height = height;
+		this.width = width;
 		coveredShips = nShips * 2;
+
+		cells = new Cell[height][width];
 
 		for (int row = 0; row < cells.length; row++) {
 			for (int col = 0; col < cells[row].length; col++) {
@@ -28,7 +44,7 @@ public class Field {
 
 	public void print() {
 
-		Out.println("  0123");
+		printColNumbers();
 
 		// print rows
 		for (int row = 0; row < cells.length; row++) {
@@ -43,7 +59,16 @@ public class Field {
 
 		}
 
-		Out.println("  0123");
+		printColNumbers();
+	}
+
+	private void printColNumbers() {
+		Out.print("  ");
+
+		for (int col = 0; col < width; col++)
+			Out.print(col);
+
+		Out.println();
 	}
 
 	public void putShip(int row, int col) {

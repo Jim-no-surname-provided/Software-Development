@@ -3,8 +3,8 @@ public class BattleshipGame {
 
     private Field field;
 
-    public BattleshipGame(int nShips) {
-        field = new Field(nShips);
+    public BattleshipGame(int height, int width, int nShips) {
+        field = new Field(height, width, nShips);
 
         putShips(nShips);
     }
@@ -15,8 +15,8 @@ public class BattleshipGame {
             int col;
 
             do {
-                row = (int) (Math.random() * 4);
-                col = (int) (Math.random() * 3);
+                row = (int) (Math.random() * field.getHeight());
+                col = (int) (Math.random() * (field.getWidth() - 1));
             } while (field.isShip(row, col) || field.isShip(row, col + 1));
 
             field.putShip(row, col);
@@ -29,7 +29,7 @@ public class BattleshipGame {
         field.print();
 
         while (!field.isGameOver()) {
-            
+
             Target target = getTarget();
             while (!field.isCovered(target.row, target.col)) {
                 Out.println("This cell is already uncovered, pick another!");
@@ -50,10 +50,10 @@ public class BattleshipGame {
     private Target getTarget() {
 
         Out.print("Row: ");
-        int row = Main.receiveInt(0, 3);
-        
+        int row = Main.receiveInt(0, field.getHeight() - 1);
+
         Out.print("Col: ");
-        int col = Main.receiveInt(0, 3);
+        int col = Main.receiveInt(0, field.getWidth() - 1);
 
         return new Target(row, col);
     }
