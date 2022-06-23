@@ -14,8 +14,8 @@ public class Main {
 
         Out.println("Starting Stopper thread ...");
         Thread stopper = new Thread(new Stopper());
-        Out.println("Waiting via .join() until Stopper thread generates a random number >= 0.99 ...");
         stopper.start();
+        Out.println("Waiting via .join() until Stopper thread generates a random number >= 0.99 ...");
         stopper.join();
         Out.println("Stopper thread joined ...");
 
@@ -42,8 +42,9 @@ public class Main {
         }
 
         Out.println();
+        double totalPi = 4.0 * totalC / totalN;
         Out.println(String.format("Overall estimated pi: %s (%s * %s / %s)",
-                4.0 * totalC / totalN,
+                totalPi,
                 4.0,
                 totalC,
                 totalN));
