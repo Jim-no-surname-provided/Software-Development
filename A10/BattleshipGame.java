@@ -41,7 +41,7 @@ public class BattleshipGame {
             }
 
             field.print();
-            Out.println(String.format("There are still %d cells with a ship", field.getCoveredShips()));
+            Out.println(String.format("There are still %d cell(s) with a ship", field.getCoveredShips()));
         }
 
         Out.println("Nice! You won!");
